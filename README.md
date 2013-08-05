@@ -1,7 +1,7 @@
 # Waterfall-Android
 =========
 
-Android, 瀑布流，Endless view, Pinterest like, Waterfall
+Android, 瀑布流，Endless view, Pinterest like, Waterfall, Staggered View
 
 Easy to use Waterfall, Welcome to use it and tell me
 
