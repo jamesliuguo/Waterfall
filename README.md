@@ -1,7 +1,9 @@
 # Waterfall
 =========
 
-Easy to use waterfall, Welcome to use it and tell me
+瀑布流，Endless view，Pinterest like
+
+Easy to use Waterfall, Welcome to use it and tell me
 
 Email: kjsoloho@gmail.com
 
