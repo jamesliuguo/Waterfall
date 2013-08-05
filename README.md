@@ -66,7 +66,9 @@ class PhotoAdapter extends ArrayAdapter<String> {
 }
 ```
 
-我借用了[Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)来加载图片
+借用了[Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)来加载图片
+借用了[StaggeredGridView](https://github.com/maurycyw/StaggeredGridView)的图片
+希望上面的大大不要介意
 
 ``` Java
 ImageLoadingListener mImageLoadingListener = new ImageLoadingListener() {
