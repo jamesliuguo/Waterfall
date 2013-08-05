@@ -39,18 +39,17 @@ Email: kjsoloho@gmail.com
 给WaterfallSmartView添加Adapter，就像使用ListView一样
 
 ``` java
-	private WaterfallSmartView mWaterfall;
+private WaterfallSmartView mWaterfall;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
 		
-		mAdapter = new PhotoAdapter(this);
-		mWaterfall = (WaterfallSmartView) findViewById(R.id.waterfall);
-		mWaterfall.setAdapter(mAdapter);
-		mWaterfall.setOnItemClickListener(this);
-		
-	}
+	mAdapter = new PhotoAdapter(this);
+	mWaterfall = (WaterfallSmartView) findViewById(R.id.waterfall);
+	mWaterfall.setAdapter(mAdapter);
+	mWaterfall.setOnItemClickListener(this);		
+}
 ```
 
 定义Adapter的时候要注意，项目只能一次一次的加入，同时要同步到WaterFallSmartView
@@ -58,11 +57,11 @@ Email: kjsoloho@gmail.com
 ``` Java
 class PhotoAdapter extends ArrayAdapter<String> {
 
-		public void add(String object, int weight, int height) {
-			super.add(object);
-			// AddItem to waterfall in same time
-			mWaterfall.addItem(object, weight, height);
-		}		
+	public void add(String object, int weight, int height) {
+		super.add(object);
+		// AddItem to waterfall in same time
+		mWaterfall.addItem(object, weight, height);
+	}		
     
 }
 ```
@@ -71,23 +70,10 @@ class PhotoAdapter extends ArrayAdapter<String> {
 
 ``` Java
 ImageLoadingListener mImageLoadingListener = new ImageLoadingListener() {
-  	
-		@Override
-		public void onLoadingStarted(String imageUri, View view) {
-		}
-		
-		@Override
-		public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-		}
-		
-		@Override
-		public void onLoadingComplete(final String imageUri, View view, Bitmap loadedImage) {
-			mAdapter.add(imageUri, loadedImage.getWidth(), loadedImage.getHeight());
-		}
-		
-		@Override
-		public void onLoadingCancelled(String imageUri, View view) {
-		}
+	@Override
+	public void onLoadingComplete(final String imageUri, View view, Bitmap loadedImage) {
+		mAdapter.add(imageUri, loadedImage.getWidth(), loadedImage.getHeight());
+	}
 };
 ```
 
