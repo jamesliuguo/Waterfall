@@ -5,7 +5,7 @@ Android, 瀑布流，Endless view, Pinterest like, Waterfall, Staggered View
 
 Easy to use Waterfall, Welcome to use it and tell me
 
-Email: kjsoloho@gmail.com
+Email: kjsoloho[at]gmail[dot]com
 
 ---
 
@@ -66,9 +66,8 @@ class PhotoAdapter extends ArrayAdapter<String> {
 }
 ```
 
-借用了[Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)来加载图片
-借用了[StaggeredGridView](https://github.com/maurycyw/StaggeredGridView)的图片
-希望上面的大大不要介意
+ * 借用了[Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)来加载图片
+ * 借用了[StaggeredGridView](https://github.com/maurycyw/StaggeredGridView)的图片
 
 ``` Java
 ImageLoadingListener mImageLoadingListener = new ImageLoadingListener() {
@@ -78,6 +77,14 @@ ImageLoadingListener mImageLoadingListener = new ImageLoadingListener() {
 	}
 };
 ```
+    
+## Donation
+
+顶着项目进度的危险做出来的，如果觉得做的可以，捐赠一点，我会加把努力的，谢谢。
+ * 支付宝：kjsoloho[at]gmail[dot]com
+ * Paypal：kjsoloho[at]gmail[dot]com
+
+---
 
 ## License
 
